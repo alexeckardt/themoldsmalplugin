@@ -16,3 +16,4 @@ REM Rename to .aseprite-extension
 ren "%extension-name%.zip" "%extension-name%.aseprite-extension"
 
 echo Build complete: %extension-name%.aseprite-extension
+~
