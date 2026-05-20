@@ -1,3 +1,8 @@
+# Moldsmal Plugin (Boil Effect for Animations)
+
+Fork from [SL0ANE](https://github.com/SL0ANE/TheMoldsmalPlugin) which defined the original algorithm. I wanted to modify this to work on multiple frames.
+
+# Original README:
 ## How To Use
 just click here ughhhhhh<br>
 <img src="https://github.com/SL0ANE/TheMoldsmalPlugin/blob/main/pics/tutorial.png" alt="image" width="640"/><br>
