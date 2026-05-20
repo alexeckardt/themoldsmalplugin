@@ -1,19 +1,22 @@
 {
-    "name": "moldsmal",
-    "displayName": "Moldsmal",
-    "description": "",
-    "version": "1.0.3",
+    "name": "pixeqla-moldsmal",
+    "displayName": "Animation Boil (Moldsmal)",
+    "description": "Aseprite extension to apply a Boil Effect to every frame of an animation.",
+    "version": "0.1.0",
     "author": {
+        "name": "Pixeqla",
+        "url": "https://pixeqla.com"
+    },
+    "contributors": [
+        {
         "name": "Loy",
         "email": "dadloy@qq.com",
         "url": "https://x.com/LoaneTheSloane"
-    },
-    "contributors": [],
-    "publisher": "Sloane",
-    "license": "DoNotUseItEverywhereYouSonOfA",
-    "categories": [
-
+        }
     ],
+    "publisher": "Xeqla",
+    "license": "MIT",
+    "categories": [ "Scripts" ],
     "contributes": {
         "scripts": [
             {

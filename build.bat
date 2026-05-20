@@ -1,16 +1,18 @@
 @echo off
-echo 正在打包文件...
+echo Packing files...
 
-REM 获取当前目录名称
+set extension-name="pixeqla-moldsmal"
+
+REM Get current directory name
 for %%I in (.) do set DIRNAME=%%~nxI
 
-REM 先打包成.zip文件（包含所有.lua文件和package.json）
-powershell -Command "Compress-Archive -Path '**.lua','**.png','**.ase','package.json' -DestinationPath '%DIRNAME%.zip' -Force"
+REM Pack into .zip file (includes all .lua files, .png, .ase files and package.json)
+powershell -Command "Compress-Archive -Path '*.lua','*.png','*.ase','package.json' -DestinationPath '%extension-name%.zip' -Force"
 
-REM 删除旧的.aseprite-extension文件
-if exist "%DIRNAME%.aseprite-extension" del "%DIRNAME%.aseprite-extension"
+REM Delete old .aseprite-extension file
+if exist "%extension-name%.aseprite-extension" del "%extension-name%.aseprite-extension"
 
-REM 重命名为.aseprite-extension
-ren "%DIRNAME%.zip" "%DIRNAME%.aseprite-extension"
+REM Rename to .aseprite-extension
+ren "%extension-name%.zip" "%extension-name%.aseprite-extension"
 
-echo 打包完成: %DIRNAME%.aseprite-extension
+echo Build complete: %extension-name%.aseprite-extension
